@@ -56,7 +56,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "8950")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MoviesSupportByItsHarshx')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MoviesSearcherByHarsh')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/kalai_support/9')
@@ -88,7 +88,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 
 
 # Online Stream and Download
-NO_PORT = bool(environ.get('NO_PORT', False))
+NO_PORT = bool(environ.get('NO_PORT', TRUE))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
